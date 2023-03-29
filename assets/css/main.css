@@ -51,6 +51,9 @@ input {
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 13px;
+  font-weight: 500;
+  padding: 70px 24px;
+  box-sizing: border-box;
 }
 
 .grid {
@@ -59,7 +62,54 @@ body {
   grid-gap: 10px;
 }
 
-.a {
+.card {
+  padding: 23px 32px 48px;
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+  border-radius: 8px;
+  position: relative;
+  z-index: -1;
+}
+.card_header {
+  display: flex;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 18px;
+}
+.card_header_image {
+  border-radius: 50%;
+  border: 2px solid hsl(264, 82%, 70%);
+  width: 28px;
+  margin-right: 17px;
+}
+.card_header_name {
+  margin: 4px;
+}
+.card_header_graduate {
+  margin-top: 4px;
+  font-size: 11px;
+  opacity: 50%;
+}
+.card #quotes {
+  position: absolute;
+  right: 48px;
+  top: 0;
+  z-index: -1;
+}
+.card_body {
+  color: hsl(0, 0%, 100%);
+}
+.card_body_main {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  line-height: 24px;
+}
+.card_body_paragraph {
+  line-height: 18px;
+  opacity: 70%;
+}
+
+#a {
   background: hsl(263, 55%, 52%);
 }
 

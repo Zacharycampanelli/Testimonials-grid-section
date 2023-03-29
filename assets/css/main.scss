@@ -7,6 +7,9 @@
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-size: 13px;
+  font-weight: 500;
+  padding: 70px 24px;
+  box-sizing: border-box;
 }
 
 .grid {
@@ -16,10 +19,61 @@ body {
 }
 
 .card {
-  // border-radius: ;
+  padding: 23px 32px 48px;
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+  border-radius: 8px;
+  position: relative;
+  z-index: -1;
+
+  &_header {
+    display: flex;
+    align-items: center;
+    color: $white;
+    margin-bottom: 18px;
+
+    &_image {
+      border-radius: 50%;
+      border: 2px solid $moderateVioletBacking;
+      width: 28px;
+      margin-right: 17px;
+    }
+
+    &_name {
+      margin: 4px;
+    }
+
+    &_graduate {
+      margin-top: 4px;
+      font-size: 11px;
+      opacity: 50%;
+    }
+
+  }
+  
+  #quotes {
+    position: absolute;
+    right: 48px;
+    top: 0;
+    z-index: -1;
+  }
+
+  &_body {
+    color: $white;
+    &_main {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 40px;
+      line-height: 24px;
+    }
+
+    &_paragraph {
+      line-height: 18px;
+      opacity: 70%;
+    }
+  }
 }
 
-.a {
+#a {
   background: $moderateViolet;
 }
 
