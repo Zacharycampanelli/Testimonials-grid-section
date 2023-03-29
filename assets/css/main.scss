@@ -1,0 +1,41 @@
+@import 'variables';
+@import 'mixins';
+@import 'media';
+@import 'reset';
+@import 'typography';
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 13px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.card {
+  // border-radius: ;
+}
+
+.a {
+  background: $moderateViolet;
+}
+
+.b {
+}
+.c {
+}
+.d {
+}
+.e {
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
