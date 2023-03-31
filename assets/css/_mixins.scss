@@ -1,0 +1,7 @@
+@mixin textIsWhite($background) {
+    @if $background {
+        color: $veryDarkBlackishBlue;
+    } @else {
+        color: $white;
+    } 
+}

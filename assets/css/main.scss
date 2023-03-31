@@ -10,6 +10,7 @@ body {
   font-weight: 500;
   padding: 70px 24px;
   box-sizing: border-box;
+  background: $lightGray;
 }
 
 .grid {
@@ -24,6 +25,7 @@ body {
   border-radius: 8px;
   position: relative;
   z-index: -1;
+  margin-bottom: 20px;
 
   &_header {
     display: flex;
@@ -33,7 +35,6 @@ body {
 
     &_image {
       border-radius: 50%;
-      border: 2px solid $moderateVioletBacking;
       width: 28px;
       margin-right: 17px;
     }
@@ -47,9 +48,8 @@ body {
       font-size: 11px;
       opacity: 50%;
     }
-
   }
-  
+
   #quotes {
     position: absolute;
     right: 48px;
@@ -58,7 +58,6 @@ body {
   }
 
   &_body {
-    color: $white;
     &_main {
       font-size: 20px;
       font-weight: 600;
@@ -73,17 +72,45 @@ body {
   }
 }
 
-#a {
-  background: $moderateViolet;
+.card_header_image {
+  border: 2px solid $moderateVioletBacking;
 }
 
-.b {
+#a {
+  background: $moderateViolet;
+
+  * {
+    @include textIsWhite($background: false);
+  }
 }
-.c {
+
+#b {
+  background: $veryDarkGrayishBlue;
+
+  * {
+    @include textIsWhite($background: false);
+  }
 }
-.d {
+#c {
+  background: $white;
+  * {
+    @include textIsWhite($background: true);
+  }
 }
-.e {
+
+#d {
+  background: $veryDarkBlackishBlue;
+  * {
+    @include textIsWhite($background: false);
+  }
+}
+
+#e {
+  background: $white;
+
+  * {
+    @include textIsWhite($background: true);
+  }
 }
 
 .attribution {
